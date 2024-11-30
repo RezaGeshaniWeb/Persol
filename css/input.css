@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .row {
+        @apply flex flex-wrap w-full;
+    }
+
+    .center {
+        @apply justify-center items-center;
+    }
+
+    .submenu {
+        @apply w-full h-0 group-hover:h-80 transition-all duration-300 bg-white absolute top-[68px] left-0 group-hover:border-t group-hover:border-gray-200 overflow-hidden;
+    }
+
+    .a-gift {
+        @apply w-full py-2 border border-black lg:border-white bg-gray-400 lg:bg-transparent md:w-1/2 lg:w-1/3 hover:bg-white hover:text-black transition-all duration-300 text-center uppercase;
+    }
+
+    .a-persol1 {
+        @apply uppercase border border-black lg:border-white text-sm py-[9px] w-full lg:w-60 bg-gray-400 lg:bg-transparent hover:bg-white hover:text-black transition-all duration-300 mb-5 lg:mb-0;
+    }
+
+    .a-persol2 {
+        @apply uppercase border border-black lg:border-white text-sm py-[9px] w-full lg:w-60 lg:ml-4 bg-gray-400 lg:bg-transparent hover:bg-white hover:text-black transition-all duration-300;
+    }
+
+    .holiday-bg {
+        background-image: url(../img/Holiday.avif);
+    }
+
+    .style-bg {
+        background-image: url(../img/styleBg.avif);
+    }
+
+    .bg-sun {
+        background-image: url(../img/bgSun.avif);
+    }
+
+    .bg-eye {
+        background-image: url(../img/bgEye.avif);
+    }
+}
